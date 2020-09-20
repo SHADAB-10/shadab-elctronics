@@ -1,0 +1,58 @@
+﻿@model shadab_electonic_shop.Models.PRODUCT
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>PRODUCT</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.PRODUCTNAME)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PRODUCTNAME)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.QUANTITY)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.QUANTITY)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PRICE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PRICE)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BRAND.BRAND1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BRAND.BRAND1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CATEGORY.CATEGORY1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CATEGORY.CATEGORY1)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
